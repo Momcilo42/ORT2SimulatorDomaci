@@ -1,0 +1,25 @@
+100, 20 // LD #33h
+101, 33
+102, 4C // ST R[00b]
+103, 20 // LD #03h
+104, 03
+105, 80 // ADD #05h
+106, 05
+107, 44 // ST 0033h
+108, 00
+109, 33
+10A, 28 // LD (R[00b] + 00h)
+10B, 00
+10C, A0 // AND #FFh
+10D, FF
+10E, 4D	// ST R[01b]
+10F, 11 // JSR
+110, 00
+111, 3C
+
+3C, F3 // LSR
+3D, 09 // BNEQ
+3E, FD
+3F, F0 // RTS
+
+// Napuniti R[00b] sa 33h radi instrukcije "LD (R[00b] + 00h)" !!!
